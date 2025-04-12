@@ -56,8 +56,8 @@ const ReportBuilder = () => {
     }
     
     const onRemoveAll = ()=>{
-        const newMdata = mData.filter((v)=>!v.IsAvailable).map((v)=>{
-             v.IsAvailable = false;
+        const newMdata = mData.map((v)=>{
+             v.IsAvailable = true;
              v.DisplayOrder = 0;
              return v;
         });
@@ -111,7 +111,7 @@ const ReportBuilder = () => {
                 </div>
                 <div className='flex justify-between'>
                     <p className="uppercase text-xs text-gray-500 font-bold">SELECTED DIMENSIONS</p>
-                    <p className="text-xs text-red-500 font-bold" onClick={onRemoveAll}>Remove All</p>
+                    <a className="text-xs text-red-500 font-bold cursor-pointer" onClick={onRemoveAll}>Remove All</a>
                 </div>
 
             </div>
