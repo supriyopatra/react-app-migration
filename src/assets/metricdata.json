@@ -1,0 +1,80 @@
+[
+  {
+    "ColumnID": 181,
+    "Alias": "Completes",
+    "DisplayOrder": 0,
+    "IsAvailable": true
+  },
+  {
+    "ColumnID": 182,
+    "Alias": "Client Spend",
+    "DisplayOrder": 0,
+    "IsAvailable": true
+  },
+  {
+    "ColumnID": 183,
+    "Alias": "Media Spend",
+    "DisplayOrder": 0,
+    "IsAvailable": true
+  },
+  {
+    "ColumnID": 185,
+    "Alias": "Data Spend",
+    "DisplayOrder": 0,
+    "IsAvailable": true
+  },
+  {
+    "ColumnID": 186,
+    "Alias": "Custom Services Fees",
+    "DisplayOrder": 0,
+    "IsAvailable": true
+  },
+  {
+    "ColumnID": 187,
+    "Alias": "Platform Fee",
+    "DisplayOrder": 0,
+    "IsAvailable": true
+  },
+  {
+    "ColumnID": 189,
+    "Alias": "Vendor Costs",
+    "DisplayOrder": 0,
+    "IsAvailable": true
+  },
+  {
+    "ColumnID": 929,
+    "Alias": "Management Fee",
+    "DisplayOrder": 0,
+    "IsAvailable": true
+  },
+  {
+    "ColumnID": 936,
+    "Alias": "Agency Markup",
+    "DisplayOrder": 0,
+    "IsAvailable": true
+  },
+  {
+    "ColumnID": 1000,
+    "Alias": "Companion Click",
+    "DisplayOrder": 0,
+    "IsAvailable": true
+  },
+  {
+    "ColumnID": 180,
+    "Alias": "Clicks",
+    "DisplayOrder": 1,
+    "IsAvailable": false
+  },
+  {
+    "ColumnID": 179,
+    "Alias": "Impressions",
+    "DisplayOrder": 2,
+    "IsAvailable": false
+  },
+  {
+    "ColumnID": 184,
+    "Alias": "Total Spend",
+    "DisplayOrder": 3,
+    "IsAvailable": false
+  }
+]

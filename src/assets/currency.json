@@ -1,0 +1,53 @@
+[
+    {
+      "CurrencyID": 1,
+      "ShortName": "USD",
+      "FullName": "United States Dollar (USD)"
+    },
+    {
+      "CurrencyID": 2,
+      "ShortName": "EUR",
+      "FullName": "Euro (EUR)"
+    },
+    {
+      "CurrencyID": 3,
+      "ShortName": "GBP",
+      "FullName": "British Pound Sterling (GBP)"
+    },
+    {
+      "CurrencyID": 4,
+      "ShortName": "INR",
+      "FullName": "Indian Rupee (INR)"
+    },
+    {
+      "CurrencyID": 5,
+      "ShortName": "JPY",
+      "FullName": "Japanese Yen (JPY)"
+    },
+    {
+      "CurrencyID": 6,
+      "ShortName": "AUD",
+      "FullName": "Australian Dollar (AUD)"
+    },
+    {
+      "CurrencyID": 7,
+      "ShortName": "CAD",
+      "FullName": "Canadian Dollar (CAD)"
+    },
+    {
+      "CurrencyID": 8,
+      "ShortName": "AFN",
+      "FullName": "Afghan Afghani (AFN)"
+    },
+    {
+      "CurrencyID": 9,
+      "ShortName": "CNY",
+      "FullName": "Chinese Yuan (CNY)"
+    },
+    {
+      "CurrencyID": 10,
+      "ShortName": "CHF",
+      "FullName": "Swiss Franc (CHF)"
+    }
+  ]
+  
