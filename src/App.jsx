@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Header from "./components/header";
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import Agency from "./pages/Agency";
@@ -11,18 +10,17 @@ import Category from "./pages/Product/Category";
 import AddCategory from "./pages/Product/AddCategory";
 import PrivateProductRoute from "./components/PrivateProductRoute";
 import EditCategory from "./pages/Product/EditCategory";
+import Product from "./pages/Product/Product";
+import ProductDetails from "./pages/Product/ProductDetails";
+import AddProduct from "./pages/Product/addProduct";
 
 
 
 export default function App() {
-  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div>
-      
       <Router>
-      
-      
           <Routes >
               <Route path="/login" element={<Login/>}/>
               <Route psth="/" element={<PrivateRoute/>}>
@@ -37,8 +35,10 @@ export default function App() {
                   <Route path="category" element={<Category />} />
                   <Route path="addCategory" element={<AddCategory />} />
                   <Route path="edit/:id" element={<EditCategory />} />
-                  <Route path="add" element={<EditCategory />} />
-                  <Route path="reportBuilder" element={<ReportBuilder />} />
+                  <Route path="addCategory" element={<EditCategory />} />
+                  <Route path="list" element={<Product />} />
+                  <Route path="details" element={<ProductDetails />} />
+                  <Route path="add" element={<AddProduct />} />
                 </Route>
               </Route>
         
