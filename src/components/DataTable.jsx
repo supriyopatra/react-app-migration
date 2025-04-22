@@ -1,24 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import TableHeader from './TableHeader'
-import TableBody from './TableBody';
-import {formatDate} from "../utils/dateFn"
-import { useNavigate } from 'react-router-dom';
+import Pegination from './Pegination';
 
 function getNestedValue(obj, path) {
     return path.split('.').reduce((acc, key) => acc?.[key], obj);
   }
 const DataTable = ({columns,data}) => {
-    const navigate = useNavigate();
-    const onEdit = (productId)=>{
-
-    }
-
-    const onProductDetails = (productId)=>{
-        console.log('productId',productId);
-        let url = '/product/details?id='+productId
-        navigate(url);
-    }
-   
+  const [page,setPage] = useState(1);
+  const [limit,setLimit] = useState(10); 
+  const [offset,setOffset] = useState(0); 
+  useEffect(()=>{
+    console.log('change page:',page);
+    let newOffset = (page-1)*limit;
+    console.log(newOffset)
+    setOffset(newOffset)
+},[page,limit])
   return (
       <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
           
@@ -27,7 +23,7 @@ const DataTable = ({columns,data}) => {
              <TableHeader columns={columns}/>
               <tbody>
                   {
-                  data.map((row)=>{
+                  data.slice(offset,limit).map((row)=>{
                       return (
                         <TableRow key={row.id} row={row} columns={columns}/>
                           
@@ -38,6 +34,7 @@ const DataTable = ({columns,data}) => {
               </tbody>
              
           </table>
+          <Pegination totalData={data.length} page={page} setPage={setPage}/>
       </div>
   )
 }
